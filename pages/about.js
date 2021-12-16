@@ -1,21 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Player from "../component/Player";
-import PlayerCSS from "../component/PlayerCSS";
+import styles from "../styles/About.module.css";
 
 export default function Home() {
-  const videoJsOptions = {
-    techOrder: ["youtube"],
-    autoplay: true,
-    controls: true,
-    sources: [
-      {
-        src: "https://www.youtube.com/watch?v=IxQB14xVas0",
-        type: "video/youtube",
-      },
-    ],
-  };
   return (
     <div className={styles.container}>
       <Head>
@@ -62,9 +49,6 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-
-          <Player {...videoJsOptions} />
-          <PlayerCSS />
         </div>
       </main>
 
